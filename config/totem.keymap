@@ -47,7 +47,19 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        es {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 12>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 17>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
